@@ -31,4 +31,4 @@ The web crawler logs into fakebook, goes to the fakebook homepage, then adds all
 The web crawler initially used a stack as its frontier, but that caused it to search a person's friends list pages before it moved on to other people. The friends list pages come after the friends, so they were added last and taken last. Since all flags are in people, the stack was changed to a queue to for search people before going to friends list pages.
 
 One issue faced was filtering the response text into usable links or flags. We ended up using re to find patterns, such as how the flag is always surrounded by FLAG: and >.
-# web-crawler
+
